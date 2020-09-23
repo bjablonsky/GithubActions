@@ -8,7 +8,7 @@ namespace GithubActionsTest.Test
         [Fact]
         public void SuccessfulTest()
         {
-            var result = 1;
+            var result = 2;
             Assert.Equal(1, result);
         }
 
