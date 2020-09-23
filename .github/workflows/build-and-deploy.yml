@@ -33,9 +33,9 @@ jobs:
       # Uncomment deploy to deploy out to an Azure Web App
       # Update app-name with your Web App name 
       # Copy the contents of the Web App publish profile to the GitHub secret named AZURE_WEBAPP_PUBLISH_PROFILE
-#    - name: Run Azure webapp deploy action using publish profile credentials
-#      uses: azure/webapps-deploy@v2
-#      with: 
-#        app-name: 'GithubActionsTest-NYC'
-#        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }}
-#        package: './myapp'
+    - name: Run Azure webapp deploy action using publish profile credentials
+      uses: azure/webapps-deploy@v2
+      with: 
+        app-name: 'GHA'
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }}
+        package: './myapp'
