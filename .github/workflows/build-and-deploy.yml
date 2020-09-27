@@ -32,7 +32,7 @@ jobs:
     # Copy the contents of the Web App publish profile to the GitHub secret named AZURE_WEBAPP_PUBLISH_PROFILE
 
     - name: Publish
-     run: dotnet publish -c Release -o './myapp' ./src/GithubActionsExample.sln
+      run: dotnet publish -c Release -o './myapp' ./src/GithubActionsExample.sln
 
     - name: Run Azure webapp deploy action using publish profile credentials
      uses: azure/webapps-deploy@v2
